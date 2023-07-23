@@ -6,6 +6,8 @@ This is an Expo App reproducer to demonstrate the performance difference between
 
 Tests include React Native `StyleSheet`, Styled Components v6, Tamagui, NativeWind and Shopify Restyle
 
+Feel free to fork or PR this repo with improvements or to include other styling libraries.
+
 ### ***Note: Test scores may vary between different machines with different hardware***
 
 1000 items are rendered in `Array.map` to simulate the complexity of a real app.
