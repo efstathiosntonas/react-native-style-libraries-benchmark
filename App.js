@@ -1,11 +1,13 @@
 import { Button, StyleSheet, Text, View } from "react-native";
-import { useCallback, useState } from "react";
-import StyledComponents from "./components/StyledComponents";
-import Native from "./components/ReactNative";
-import Tamagui from "./components/Tamagui";
-import Restyle from "./components/Restyle";
+import { useState } from "react";
 import { useFonts } from "expo-font";
+
+import Native from "./components/ReactNative";
 import NativeWind from "./components/NativeWind";
+import Restyle from "./components/Restyle";
+import StyledComponents from "./components/StyledComponents";
+import Tamagui from "./components/Tamagui";
+
 export default function App() {
   const [styleType, setStyleType] = useState(undefined);
 
@@ -13,7 +15,7 @@ export default function App() {
     setStyleType(curry);
   };
 
-  const renderStyleLibrary = useCallback(() => {
+  const renderStyleLibrary = () => {
     switch (styleType) {
       case "React Native":
         return <Native />;
@@ -28,7 +30,7 @@ export default function App() {
       default:
         return null;
     }
-  }, [styleType]);
+  };
 
   const [loaded] = useFonts({
     Inter: require("@tamagui/font-inter/otf/Inter-Medium.otf"),
