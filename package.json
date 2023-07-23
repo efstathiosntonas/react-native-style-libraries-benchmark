@@ -1,0 +1,41 @@
+{
+  "name": "styledcomponents",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start-native": "TAMAGUI_TARGET=native expo start -c",
+    "start-web": "TAMAGUI_TARGET=web expo start -c",
+    "android": "TAMAGUI_TARGET=native yarn expo run:android",
+    "ios": "TAMAGUI_TARGET=native yarn expo run:ios",
+    "web": "TAMAGUI_TARGET=web expo start --web"
+  },
+  "dependencies": {
+    "@shopify/restyle": "^2.4.2",
+    "@tamagui/animations-react-native": "^1.43.17",
+    "@tamagui/babel-plugin": "^1.43.17",
+    "@tamagui/config": "^1.43.17",
+    "@tamagui/core": "^1.43.17",
+    "@tamagui/font-inter": "^1.43.17",
+    "@tamagui/react-native-media-driver": "^1.43.17",
+    "@tamagui/shorthands": "^1.43.17",
+    "@tamagui/theme-base": "^1.43.17",
+    "@tamagui/themes": "^1.43.17",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.4",
+    "expo": "~49.0.4",
+    "expo-font": "^11.4.0",
+    "expo-status-bar": "~1.6.0",
+    "nativewind": "^2.0.11",
+    "react": "18.2.0",
+    "react-dom": "^18.2.0",
+    "react-native": "0.72.3",
+    "react-native-web": "^0.19.7",
+    "styled-components": "^6.0.5",
+    "tamagui": "^1.43.17",
+    "expo-splash-screen": "~0.20.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "tailwindcss": "^3.3.3"
+  },
+  "private": true
+}
