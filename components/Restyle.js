@@ -2,6 +2,7 @@ import { StyleSheet, View } from "react-native";
 import { createBox } from "@shopify/restyle";
 
 const Box = createBox();
+
 const Restyle = () => {
   return (
     <View style={{ display: "flex", flexDirection: "row" }}>

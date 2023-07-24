@@ -2,6 +2,7 @@ import { StyleSheet, View } from "react-native";
 import { styled } from "nativewind";
 
 const StyledView = styled(View);
+
 const NativeWind = () => {
   return (
     <View style={{ display: "flex", flexDirection: "row" }}>
