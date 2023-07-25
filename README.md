@@ -14,16 +14,22 @@ Feel free to fork or PR this repo with improvements or to include other styling 
 
 Read this comment on how to test the performance: https://github.com/styled-components/styled-components/issues/3940#issuecomment-1630244738
 
-## Results - Styled v Native Render Time 1000 Empty Views (ms)
+## Results - Rendering Time for 1000 Empty Views (ms)
+
+Mac Specs: 
+Mac Studio M1 Ultra 1TB SSD 64GB RAM
+Simulator: iPhone 14 Pro Max iOS 16.4
 
 ![graph.png](assets/graph.png)
 
+|            | 1     | 2     | 3     | 4     | 5     | 6     | Avg   | % Slowdown |
+|------------|-------|-------|-------|-------|-------|-------|-------|------------|
+| Native     | 140.1 | 135.6 | 137.5 | 142.1 | 137.2 | 131.3 | 137.6 | 0          |
+| Tamagui    | 501.4 | 507.8 | 506.9 | 506.4 | 510.7 | 502.5 | 506.5 | 267.88     |
+| Styled v6  | 227.7 | 226.7 | 229   | 226   | 224   | 225.9 | 226.7 | 64.86      |
+| Restyle    | 186.8 | 162.3 | 185.2 | 184.4 | 186.6 | 184.2 | 182.5 | 32.63      |
+| NativeWind | 226.3 | 248.9 | 243.4 | 245.1 | 245.1 | 246.5 | 241.8 | 75.95      |
 
-|           | 1   | 2   | 3   | 4   | 5   | 6   | Avg | % Slowdown |
-|-----------|-----|-----|-----|-----|-----|-----|-----|------------|
-| Native    | 289 | 281 | 286 | 296 | 280 | 268 |  283 | 0          |
-| Styled v5 | 440 | 426 | 424 | 428 | 429 | 432 |  429 | 41.0       |
-| Styled v6 | 400 | 404 | 401 | 395 | 404 | 400 | 400 | 34.2       |
 
 # Reproduction Steps
 1. Start the profiler by pressing Shift + M and open React Dev Tools.
