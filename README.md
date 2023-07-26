@@ -10,6 +10,8 @@ Feel free to fork or PR this repo with improvements or to include other styling 
 
 ### ***Note: Test scores may vary between different machines with different hardware***
 
+### Note: `Tamagui` scores are surprisingly low, I've created a [discussion about it](https://github.com/tamagui/tamagui/discussions/1471)
+
 1000 items are rendered in `Array.map` to simulate the complexity of a real app.
 
 Read this comment on how to test the performance: https://github.com/styled-components/styled-components/issues/3940#issuecomment-1630244738
