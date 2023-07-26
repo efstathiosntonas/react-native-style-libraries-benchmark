@@ -2,12 +2,12 @@ import { Button, StyleSheet, Text, View } from "react-native";
 import { useState } from "react";
 import { useFonts } from "expo-font";
 
+import EmotionNative from "./components/EmotionNative";
 import Native from "./components/ReactNative";
 import NativeWind from "./components/NativeWind";
 import Restyle from "./components/Restyle";
 import StyledComponents from "./components/StyledComponents";
 import Tamagui from "./components/Tamagui";
-import EmotionNative from "./components/EmotionNative";
 
 export default function App() {
   const [styleType, setStyleType] = useState(undefined);
@@ -46,7 +46,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>Tap a style library to start rendering</Text>
+      <Text style={styles.text}>Tap a style library to start rendering</Text>
       <Button title="React Native" onPress={onStyleTypePress("React Native")} />
       <Button
         title="Styled Components"
@@ -55,8 +55,13 @@ export default function App() {
       <Button title="Tamagui" onPress={onStyleTypePress("Tamagui")} />
       <Button title="Restyle" onPress={onStyleTypePress("Restyle")} />
       <Button title="NativeWind" onPress={onStyleTypePress("NativeWind")} />
-      <Button title="Emotion Native" onPress={onStyleTypePress("Emotion Native")} />
-      {styleType ? <Text>Rendering with {styleType}</Text> : null}
+      <Button
+        title="Emotion Native"
+        onPress={onStyleTypePress("Emotion Native")}
+      />
+      {styleType ? (
+        <Text style={styles.text}>Rendering with {styleType}</Text>
+      ) : null}
       {renderStyleLibrary()}
     </View>
   );
@@ -64,9 +69,12 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: "#fff",
     alignItems: "center",
+    backgroundColor: "#fff",
+    flex: 1,
     justifyContent: "center",
+  },
+  text: {
+    marginVertical: 12,
   },
 });
