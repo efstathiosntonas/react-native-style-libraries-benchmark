@@ -2,7 +2,7 @@
 
 Original reproducer was created by @tj-mc: https://github.com/tj-mc/styled-components-native-perf-reproducer
 
-This is an Expo App reproducer to demonstrate the performance difference between using popular style libraries and react-native built-in styling.
+This is an Expo SDK 49 App reproducer to demonstrate the performance difference between using popular style libraries and react-native built-in styling.
 
 Tests include React Native `StyleSheet`, `Styled Components`, `Tamagui`, `NativeWind`, `Emotion` and Shopify `restyle`
 
