@@ -1,23 +1,22 @@
 import React from "react";
 import { View } from "react-native";
-import { TamaguiProvider } from "@tamagui/core";
-import { styled } from "tamagui";
+import { Stack, TamaguiProvider } from "@tamagui/core";
 
 import config from "../tamagui.config";
-
-const TamaguiView = styled(View, {
-  name: "TamaguiView",
-  padding: 5,
-  borderColor: "red",
-  borderWidth: 2,
-});
 
 const Tamagui = () => {
   return (
     <TamaguiProvider config={config}>
       <View style={{ display: "flex", flexDirection: "row" }}>
         {new Array(1000).fill(0).map((_, i) => (
-          <TamaguiView key={i} />
+          <Stack
+            borderColor="red"
+            borderWidth={2}
+            flex={1}
+            justifyContent="space-between"
+            key={i}
+            padding={5}
+          />
         ))}
       </View>
     </TamaguiProvider>
