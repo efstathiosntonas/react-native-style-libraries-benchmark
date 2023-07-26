@@ -18,9 +18,10 @@ Read this comment on how to test the performance: https://github.com/styled-comp
 
 Mac Specs: 
 Mac Studio M1 Ultra 1TB SSD 64GB RAM
-Simulator: iPhone 14 Pro Max iOS 16.4
+Simulator: iPhone 13, iOS 16.4
 
-![graph.png](assets/graph.png)
+![graph_1.png](assets/graph_1.png)
+![graph_2.png](assets/graph_2.png)
 
 |            | 1     | 2      | 3     | 4     | 5     | 6     | Avg   | % Slowdown |
 |------------|-------|--------|-------|-------|-------|-------|-------|------------|
