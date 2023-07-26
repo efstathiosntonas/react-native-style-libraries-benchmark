@@ -10,6 +10,8 @@
     "web": "TAMAGUI_TARGET=web expo start --web"
   },
   "dependencies": {
+    "@emotion/native": "^11.11.0",
+    "@emotion/react": "^11.11.1",
     "@shopify/restyle": "^2.4.2",
     "@tamagui/animations-react-native": "^1.45.8",
     "@tamagui/babel-plugin": "^1.45.8",
@@ -23,6 +25,7 @@
     "babel-plugin-transform-inline-environment-variables": "^0.4.4",
     "expo": "~49.0.5",
     "expo-font": "^11.4.0",
+    "expo-splash-screen": "~0.20.4",
     "expo-status-bar": "~1.6.0",
     "nativewind": "^2.0.11",
     "react": "18.2.0",
@@ -30,12 +33,11 @@
     "react-native": "0.72.3",
     "react-native-web": "^0.19.7",
     "styled-components": "^6.0.5",
-    "tamagui": "^1.45.8",
-    "expo-splash-screen": "~0.20.4"
+    "tamagui": "^1.45.8"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "3.3.2"
   },
   "private": true
 }
