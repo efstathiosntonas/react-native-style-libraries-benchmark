@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import { Stack, TamaguiProvider } from "@tamagui/core";
+import { Stack, TamaguiProvider } from "tamagui";
 
 import config from "../tamagui.config";
 
