@@ -19,7 +19,7 @@ Read this comment on how to test the performance: https://github.com/styled-comp
 ## Results - Rendering Time for 1000 Empty Views (ms)
 
 Mac Specs: 
-Mac Studio M1 Ultra 1TB SSD 64GB RAM
+Mac Studio M1 Ultra 1TB SSD 64GB RAM\
 Simulator: iPhone 13, iOS 16.4
 
 ![graph_1.png](assets/graph_1.png)
