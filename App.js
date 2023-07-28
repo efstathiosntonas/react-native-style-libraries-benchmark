@@ -8,6 +8,7 @@ import NativeWind from "./components/NativeWind";
 import Restyle from "./components/Restyle";
 import StyledComponents from "./components/StyledComponents";
 import Tamagui from "./components/Tamagui";
+import { Zephyr } from "./components/Zephyr";
 
 export default function App() {
   const [styleType, setStyleType] = useState(undefined);
@@ -30,6 +31,8 @@ export default function App() {
         return <NativeWind />;
       case "Emotion Native":
         return <EmotionNative />;
+      case "Zephyr":
+        return <Zephyr />;
       default:
         return null;
     }
@@ -59,6 +62,7 @@ export default function App() {
         title="Emotion Native"
         onPress={onStyleTypePress("Emotion Native")}
       />
+      <Button title="Zephyr" onPress={onStyleTypePress("Zephyr")} />
       {styleType ? (
         <Text style={styles.text}>Rendering with {styleType}</Text>
       ) : null}
