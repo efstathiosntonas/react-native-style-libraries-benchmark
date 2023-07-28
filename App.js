@@ -8,6 +8,7 @@ import NativeWind from "./components/NativeWind";
 import Restyle from "./components/Restyle";
 import StyledComponents from "./components/StyledComponents";
 import Tamagui from "./components/Tamagui";
+import Dripsy from "./components/Dripsy";
 
 export default function App() {
   const [styleType, setStyleType] = useState(undefined);
@@ -30,6 +31,8 @@ export default function App() {
         return <NativeWind />;
       case "Emotion Native":
         return <EmotionNative />;
+      case "Dripsy":
+        return <Dripsy />;
       default:
         return null;
     }
@@ -53,6 +56,7 @@ export default function App() {
         onPress={onStyleTypePress("Styled Components")}
       />
       <Button title="Tamagui" onPress={onStyleTypePress("Tamagui")} />
+      <Button title="Dripsy" onPress={onStyleTypePress("Dripsy")} />
       <Button title="Restyle" onPress={onStyleTypePress("Restyle")} />
       <Button title="NativeWind" onPress={onStyleTypePress("NativeWind")} />
       <Button

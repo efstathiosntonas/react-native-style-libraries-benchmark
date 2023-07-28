@@ -23,6 +23,7 @@
     "@tamagui/theme-base": "^1.46.2",
     "@tamagui/themes": "^1.46.2",
     "babel-plugin-transform-inline-environment-variables": "^0.4.4",
+    "dripsy": "^4.3.3",
     "expo": "~49.0.5",
     "expo-font": "^11.4.0",
     "expo-splash-screen": "~0.20.4",
