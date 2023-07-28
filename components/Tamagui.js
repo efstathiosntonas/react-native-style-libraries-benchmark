@@ -9,14 +9,7 @@ const Tamagui = () => {
     <TamaguiProvider config={config}>
       <View style={{ display: "flex", flexDirection: "row" }}>
         {new Array(1000).fill(0).map((_, i) => (
-          <Stack
-            borderColor="red"
-            borderWidth={2}
-            flex={1}
-            justifyContent="space-between"
-            key={i}
-            padding={5}
-          />
+          <Stack borderColor="red" borderWidth={2} key={i} padding={5} />
         ))}
       </View>
     </TamaguiProvider>
