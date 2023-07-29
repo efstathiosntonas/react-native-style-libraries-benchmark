@@ -18,6 +18,10 @@ Read this comment on how to test the performance: https://github.com/styled-comp
 
 ![demo.png](assets/demo.png)
 
+Demo with `TAMAGUI_TARGET=native expo start --no-dev --minify`\
+\
+![demo.mp4](assets/demo.mp4)
+
 ## Results - Rendering Time for 1000 Empty Views (ms)
 
 Mac Specs: 
