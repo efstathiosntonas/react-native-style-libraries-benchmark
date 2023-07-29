@@ -2,13 +2,14 @@ import { Button, StyleSheet, Text, View } from "react-native";
 import { useState } from "react";
 import { useFonts } from "expo-font";
 
+import Dripsy from "./components/Dripsy";
 import EmotionNative from "./components/EmotionNative";
 import Native from "./components/ReactNative";
 import NativeWind from "./components/NativeWind";
 import Restyle from "./components/Restyle";
 import StyledComponents from "./components/StyledComponents";
 import Tamagui from "./components/Tamagui";
-import Dripsy from "./components/Dripsy";
+import TimedRender from "./components/TimedRender";
 import { Zephyr } from "./components/Zephyr";
 
 export default function App() {
@@ -68,7 +69,9 @@ export default function App() {
       />
       <Button title="Zephyr" onPress={onStyleTypePress("Zephyr")} />
       {styleType ? (
-        <Text style={styles.text}>Rendering with {styleType}</Text>
+        <TimedRender key={styleType}>
+          <Text style={styles.text}>Rendering with {styleType}</Text>
+        </TimedRender>
       ) : null}
       {renderStyleLibrary()}
     </View>
