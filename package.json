@@ -4,6 +4,7 @@
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start-native": "TAMAGUI_TARGET=native expo start -c",
+    "start-native-release-mode": "TAMAGUI_TARGET=native expo start --no-dev --minify",
     "start-web": "TAMAGUI_TARGET=web expo start -c",
     "android": "TAMAGUI_TARGET=native yarn expo run:android",
     "ios": "TAMAGUI_TARGET=native yarn expo run:ios",
