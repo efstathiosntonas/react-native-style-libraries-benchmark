@@ -13,14 +13,14 @@
     "@emotion/native": "^11.11.0",
     "@emotion/react": "^11.11.1",
     "@shopify/restyle": "^2.4.2",
-    "@tamagui/animations-react-native": "^1.46.2",
-    "@tamagui/config": "^1.46.2",
-    "@tamagui/core": "^1.46.2",
-    "@tamagui/font-inter": "^1.46.2",
-    "@tamagui/react-native-media-driver": "^1.46.2",
-    "@tamagui/shorthands": "^1.46.2",
-    "@tamagui/theme-base": "^1.46.2",
-    "@tamagui/themes": "^1.46.2",
+    "@tamagui/animations-react-native": "^1.47.1",
+    "@tamagui/config": "^1.47.1",
+    "@tamagui/core": "^1.47.1",
+    "@tamagui/font-inter": "^1.47.1",
+    "@tamagui/react-native-media-driver": "^1.47.1",
+    "@tamagui/shorthands": "^1.47.1",
+    "@tamagui/theme-base": "^1.47.1",
+    "@tamagui/themes": "^1.47.1",
     "babel-plugin-transform-inline-environment-variables": "^0.4.4",
     "dripsy": "^4.3.3",
     "expo": "~49.0.5",
@@ -34,11 +34,11 @@
     "react-native-web": "^0.19.7",
     "react-native-zephyr": "^1.1.2",
     "styled-components": "^6.0.5",
-    "tamagui": "^1.46.2"
+    "tamagui": "^1.47.1"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
-    "@tamagui/babel-plugin": "^1.46.2",
+    "@tamagui/babel-plugin": "^1.47.1",
     "tailwindcss": "3.3.2"
   },
   "private": true
