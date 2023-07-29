@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@emotion/native": "11.11.0",
-    "@emotion/react": "11.11.0",
+    "@emotion/react": "11.11.1",
     "@gluestack-style/animation-plugin": "0.1.7",
     "@gluestack-style/react": "0.1.33",
     "@gluestack-ui/provider": "0.1.6",
