@@ -20,7 +20,8 @@ Read this comment on how to test the performance: https://github.com/styled-comp
 
 Demo video with `TAMAGUI_TARGET=native expo start --no-dev --minify`:
 
-![react-native-style-libraries-benchmark](https://github-production-user-asset-6210df.s3.amazonaws.com/717975/256976965-91b3831e-2d84-405b-923f-39cb1c6baf52.mp4)
+
+https://github.com/efstathiosntonas/react-native-style-libraries-benchmark/assets/717975/91b3831e-2d84-405b-923f-39cb1c6baf52
 
 
 ## Results - Rendering Time for 1000 Empty Views (ms) in DEV mode
