@@ -12,7 +12,7 @@ Feel free to fork or PR this repo with improvements or to include other styling 
 
 ### Note: `Tamagui` scores are surprisingly low, I've created a [discussion about it](https://github.com/tamagui/tamagui/discussions/1471)
 
-1000 items are rendered in `Array.map` to simulate the complexity of a real app.
+1000 items are rendered in `Array.map` and it's a **basic** test in DEV mode. When more features of each library are added (eg. media queries etc) as your project grows the measurements may vary by a lot.
 
 Read this comment on how to test the performance: https://github.com/styled-components/styled-components/issues/3940#issuecomment-1630244738
 
