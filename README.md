@@ -16,6 +16,8 @@ Feel free to fork or PR this repo with improvements or to include other styling 
 
 Read this comment on how to test the performance: https://github.com/styled-components/styled-components/issues/3940#issuecomment-1630244738
 
+![demo.png](assets/demo.png)
+
 ## Results - Rendering Time for 1000 Empty Views (ms)
 
 Mac Specs: 
