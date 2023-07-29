@@ -18,11 +18,11 @@ Read this comment on how to test the performance: https://github.com/styled-comp
 
 ![demo.png](assets/demo.png)
 
-Demo with `TAMAGUI_TARGET=native expo start --no-dev --minify`\
+Demo video with `TAMAGUI_TARGET=native expo start --no-dev --minify`\
 \
 https://github.com/efstathiosntonas/react-native-style-libraries-benchmark/assets/717975/91b3831e-2d84-405b-923f-39cb1c6baf52
 
-## Results - Rendering Time for 1000 Empty Views (ms)
+## Results - Rendering Time for 1000 Empty Views (ms) in DEV mode
 
 Mac Specs: 
 Mac Studio M1 Ultra 1TB SSD 64GB RAM\
