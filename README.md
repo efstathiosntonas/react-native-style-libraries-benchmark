@@ -4,7 +4,7 @@ Original reproducer was created by @tj-mc: https://github.com/tj-mc/styled-compo
 
 This is an Expo SDK 49 App reproducer to demonstrate the performance difference between popular style libraries and react-native built-in styling.
 
-Tests include React Native `StyleSheet`, `Styled Components`, `Tamagui`, `NativeWind`, `Emotion`, `Zephyr`, `Dripsy` and Shopify `restyle`
+Tests include React Native `StyleSheet`, `Styled Components`, `Tamagui`, `NativeWind`, `Emotion`, `Zephyr`, `Dripsy`, `Gluestack` and Shopify `restyle`
 
 Feel free to fork or PR this repo with improvements or to include other styling libraries.
 

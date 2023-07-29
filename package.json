@@ -12,6 +12,10 @@
   "dependencies": {
     "@emotion/native": "^11.11.0",
     "@emotion/react": "^11.11.1",
+    "@gluestack-style/animation-plugin": "latest",
+    "@gluestack-style/react": "latest",
+    "@gluestack-ui/provider": "latest",
+    "@gluestack-ui/vstack": "latest",
     "@shopify/restyle": "^2.4.2",
     "@tamagui/animations-react-native": "^1.47.1",
     "@tamagui/config": "^1.47.1",
@@ -21,12 +25,14 @@
     "@tamagui/shorthands": "^1.47.1",
     "@tamagui/theme-base": "^1.47.1",
     "@tamagui/themes": "^1.47.1",
+    "@types/react": "~18.2.14",
     "babel-plugin-transform-inline-environment-variables": "^0.4.4",
     "dripsy": "^4.3.3",
     "expo": "~49.0.5",
     "expo-font": "^11.4.0",
     "expo-splash-screen": "~0.20.4",
     "expo-status-bar": "~1.6.0",
+    "gluestack-ui": "^0.4.8",
     "nativewind": "^2.0.11",
     "react": "18.2.0",
     "react-dom": "^18.2.0",
@@ -38,7 +44,11 @@
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
+    "@gluestack-style/babel-plugin-styled-resolver": "^0.1.14",
     "@tamagui/babel-plugin": "^1.47.1",
+    "@types/react-native": "^0.71.6",
+    "react-native": "^0.70.7",
+    "react-native-web": "^0.18.12",
     "tailwindcss": "3.3.2"
   },
   "private": true

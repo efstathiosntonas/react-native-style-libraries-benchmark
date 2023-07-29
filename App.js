@@ -11,6 +11,7 @@ import StyledComponents from "./components/StyledComponents";
 import Tamagui from "./components/Tamagui";
 import TimedRender from "./components/TimedRender";
 import { Zephyr } from "./components/Zephyr";
+import Gluestack from "./components/Gluestack";
 
 export default function App() {
   const [styleType, setStyleType] = useState(undefined);
@@ -37,6 +38,8 @@ export default function App() {
         return <Dripsy />;
       case "Zephyr":
         return <Zephyr />;
+      case "Gluestack":
+        return <Gluestack />;
       default:
         return null;
     }
@@ -68,6 +71,7 @@ export default function App() {
         onPress={onStyleTypePress("Emotion Native")}
       />
       <Button title="Zephyr" onPress={onStyleTypePress("Zephyr")} />
+      <Button title="Gluestack" onPress={onStyleTypePress("Gluestack")} />
       {styleType ? (
         <TimedRender key={styleType}>
           <Text style={styles.text}>Rendering with {styleType}</Text>
