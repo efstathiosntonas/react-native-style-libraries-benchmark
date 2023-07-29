@@ -74,7 +74,9 @@ export default function App() {
       <Button title="Gluestack" onPress={onStyleTypePress("Gluestack")} />
       {styleType ? (
         <TimedRender key={styleType}>
-          <Text style={styles.text}>Rendering with {styleType}</Text>
+          <Text style={styles.text}>
+            Rendering with <Text style={styles.bold}>{styleType}</Text>
+          </Text>
         </TimedRender>
       ) : null}
       {renderStyleLibrary()}
@@ -91,5 +93,9 @@ const styles = StyleSheet.create({
   },
   text: {
     marginVertical: 12,
+  },
+  bold: {
+    fontWeight: "bold",
+    fontSize: 16,
   },
 });
