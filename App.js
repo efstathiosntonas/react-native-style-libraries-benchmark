@@ -1,17 +1,18 @@
-import { Button, StyleSheet, Text, View } from "react-native";
-import { useState } from "react";
 import { useFonts } from "expo-font";
+import { useState } from "react";
+import { Button, StyleSheet, Text, View } from "react-native";
 
 import Dripsy from "./components/Dripsy";
 import EmotionNative from "./components/EmotionNative";
-import Native from "./components/ReactNative";
+import Gluestack from "./components/Gluestack";
 import NativeWind from "./components/NativeWind";
+import Native from "./components/ReactNative";
 import Restyle from "./components/Restyle";
 import StyledComponents from "./components/StyledComponents";
 import Tamagui from "./components/Tamagui";
 import TimedRender from "./components/TimedRender";
+import Twrnc from "./components/Twrnc";
 import { Zephyr } from "./components/Zephyr";
-import Gluestack from "./components/Gluestack";
 
 export default function App() {
   const [styleType, setStyleType] = useState(undefined);
@@ -40,6 +41,8 @@ export default function App() {
         return <Zephyr />;
       case "Gluestack":
         return <Gluestack />;
+      case "Twrnc":
+        return <Twrnc />;
       default:
         return null;
     }
@@ -72,6 +75,7 @@ export default function App() {
       />
       <Button title="Zephyr" onPress={onStyleTypePress("Zephyr")} />
       <Button title="Gluestack" onPress={onStyleTypePress("Gluestack")} />
+      <Button title="Twrnc" onPress={onStyleTypePress("Twrnc")} />
       {styleType ? (
         <TimedRender key={styleType}>
           <Text style={styles.text}>
