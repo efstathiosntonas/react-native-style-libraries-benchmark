@@ -4,7 +4,7 @@ Original reproducer was created by @tj-mc: https://github.com/tj-mc/styled-compo
 
 This is an Expo SDK 49 App reproducer to demonstrate the performance difference between popular style libraries and react-native built-in styling.
 
-Tests include React Native [StyleSheet](https://reactnative.dev/docs/stylesheet), [Styled Components](https://github.com/styled-components/styled-components), [Tamagui](https://github.com/tamagui/tamagui), [NativeWind](https://github.com/marklawlor/nativewind), [Emotion](https://github.com/emotion-js/emotion), [Zephyr](https://github.com/FormidableLabs/react-native-zephyr), [Dripsy](https://github.com/nandorojo/dripsy), [Gluestack](https://github.com/gluestack/gluestack-ui), [fast-styles](https://github.com/fedemartinm/fast-styles) and Shopify [restyle](https://github.com/Shopify/restyle)
+Tests include React Native [StyleSheet](https://reactnative.dev/docs/stylesheet), [Styled Components](https://github.com/styled-components/styled-components), [Tamagui](https://github.com/tamagui/tamagui), [NativeWind](https://github.com/marklawlor/nativewind), [Emotion](https://github.com/emotion-js/emotion), [Zephyr](https://github.com/FormidableLabs/react-native-zephyr), [Dripsy](https://github.com/nandorojo/dripsy), [Gluestack](https://github.com/gluestack/gluestack-ui), [fast-styles](https://github.com/fedemartinm/fast-styles), [Tailwind React Native Classnames(twrnc)](https://github.com/jaredh159/tailwind-react-native-classnames) and Shopify [restyle](https://github.com/Shopify/restyle)
 
 Feel free to fork or PR this repo with improvements or to include other styling libraries.
 
@@ -45,6 +45,7 @@ Simulator: iPhone 13, iOS 16.4
 | NativeWind | 291.3 | 289   | 295.6 | 293.9 | 292.6 | 294   | 292.9  | 112.3%     |
 | Tamagui    | 310   | 318   | 310   | 305   | 324   | 313   | 314.33 | 128.57%    |
 | Dripsy     | 661.5 | 651.3 | 665.1 | 661.4 | 653.6 | 673.7 | 661.1  | 380.53%    |
+| Gluestack  | 793   | 789   | 815   | 815   | 783   | 779   | 798.83 | 480.24%    |
 | Gluestack  | 793   | 789   | 815   | 815   | 783   | 779   | 798.83 | 480.24%    |
 
 
