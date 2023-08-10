@@ -78,8 +78,11 @@ export default function App() {
       />
       <Button title="Zephyr" onPress={onStyleTypePress("Zephyr")} />
       <Button title="Gluestack" onPress={onStyleTypePress("Gluestack")} />
-      <Button title="Twrnc" onPress={onStyleTypePress("Twrnc")} />
-      <Button title="FastStyles" onPress={onStyleTypePress("FastStyles")} />
+      <Button
+        title="twrnc (tailwind rn class names)"
+        onPress={onStyleTypePress("Twrnc")}
+      />
+      <Button title="fast-styles" onPress={onStyleTypePress("FastStyles")} />
       {styleType ? (
         <TimedRender key={styleType}>
           <Text style={styles.text}>
