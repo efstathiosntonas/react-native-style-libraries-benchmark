@@ -13,6 +13,7 @@ import Tamagui from "./components/Tamagui";
 import TimedRender from "./components/TimedRender";
 import Twrnc from "./components/Twrnc";
 import { Zephyr } from "./components/Zephyr";
+import FastStyles from "./components/FastStyles";
 
 export default function App() {
   const [styleType, setStyleType] = useState(undefined);
@@ -43,6 +44,8 @@ export default function App() {
         return <Gluestack />;
       case "Twrnc":
         return <Twrnc />;
+      case "FastStyles":
+        return <FastStyles />;
       default:
         return null;
     }
@@ -76,6 +79,7 @@ export default function App() {
       <Button title="Zephyr" onPress={onStyleTypePress("Zephyr")} />
       <Button title="Gluestack" onPress={onStyleTypePress("Gluestack")} />
       <Button title="Twrnc" onPress={onStyleTypePress("Twrnc")} />
+      <Button title="FastStyles" onPress={onStyleTypePress("FastStyles")} />
       {styleType ? (
         <TimedRender key={styleType}>
           <Text style={styles.text}>
