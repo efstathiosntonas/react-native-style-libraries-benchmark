@@ -5,4 +5,5 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  presets: [require("nativewind/preset")],
 };
