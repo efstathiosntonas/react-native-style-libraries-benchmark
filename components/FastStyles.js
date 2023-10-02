@@ -1,5 +1,6 @@
 import { View } from "react-native";
 import { styled } from "@fast-styles/react";
+import { COUNT } from "../utils";
 
 const FastStylesView = styled(View, {
   borderColor: "red",
@@ -10,7 +11,7 @@ const FastStylesView = styled(View, {
 const FastStyles = () => {
   return (
     <View style={{ display: "flex", flexDirection: "row" }}>
-      {new Array(1000).fill(0).map((_, i) => (
+      {new Array(COUNT).fill(0).map((_, i) => (
         <FastStylesView key={i} />
       ))}
     </View>

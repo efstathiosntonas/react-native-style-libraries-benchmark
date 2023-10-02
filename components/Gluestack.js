@@ -4,7 +4,8 @@ import { createProvider } from "@gluestack-ui/provider";
 import { StyledProvider } from "@gluestack-style/react";
 
 import { config } from "../gluestack-ui.config";
-import { styled } from "../styles/gluestack-styled";
+import { styled } from "@gluestack-ui/themed";
+import { COUNT } from "../utils";
 
 const GluestackUIStyledProvider = createProvider({ StyledProvider });
 
@@ -24,7 +25,7 @@ const Gluestack = () => {
   return (
     <GluestackUIProvider config={config.theme}>
       <View style={{ display: "flex", flexDirection: "row" }}>
-        {new Array(1000).fill(0).map((_, i) => (
+        {new Array(COUNT).fill(0).map((_, i) => (
           <GluestackBox key={i} />
         ))}
       </View>
