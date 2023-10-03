@@ -14,6 +14,7 @@ import TimedRender from "./components/TimedRender";
 import Twrnc from "./components/Twrnc";
 import { Zephyr } from "./components/Zephyr";
 import FastStyles from "./components/FastStyles";
+import Unistyles from "./components/Unistyles";
 
 export default function App() {
   const [styleType, setStyleType] = useState(undefined);
@@ -46,6 +47,8 @@ export default function App() {
         return <Twrnc />;
       case "FastStyles":
         return <FastStyles />;
+      case "Unistyles":
+        return <Unistyles />;
       default:
         return null;
     }
@@ -83,6 +86,7 @@ export default function App() {
         onPress={onStyleTypePress("Twrnc")}
       />
       <Button title="fast-styles" onPress={onStyleTypePress("FastStyles")} />
+      <Button title="react-native-unistyles" onPress={onStyleTypePress("Unistyles")} />
       {styleType ? (
         <TimedRender key={styleType}>
           <Text style={styles.text}>
