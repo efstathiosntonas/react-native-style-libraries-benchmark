@@ -4,7 +4,7 @@ Original reproducer was created by @tj-mc: https://github.com/tj-mc/styled-compo
 
 This is an Expo SDK 49 App reproducer to demonstrate the performance difference between popular style libraries and react-native built-in styling.
 
-Tests include React Native [StyleSheet](https://reactnative.dev/docs/stylesheet), [Styled Components](https://github.com/styled-components/styled-components), [Tamagui](https://github.com/tamagui/tamagui), [NativeWind](https://github.com/marklawlor/nativewind), [Emotion](https://github.com/emotion-js/emotion), [Zephyr](https://github.com/FormidableLabs/react-native-zephyr), [Dripsy](https://github.com/nandorojo/dripsy), Gluestack [[1]](https://github.com/gluestack/gluestack-ui) [[2]](https://github.com/gluestack/gluestack-style), [fast-styles](https://github.com/fedemartinm/fast-styles), [Tailwind React Native Classnames(twrnc)](https://github.com/jaredh159/tailwind-react-native-classnames) and Shopify [restyle](https://github.com/Shopify/restyle)
+Tests include React Native [StyleSheet](https://reactnative.dev/docs/stylesheet), [Styled Components](https://github.com/styled-components/styled-components), [Tamagui](https://github.com/tamagui/tamagui), [NativeWind](https://github.com/marklawlor/nativewind), [Emotion](https://github.com/emotion-js/emotion), [Zephyr](https://github.com/FormidableLabs/react-native-zephyr), [Dripsy](https://github.com/nandorojo/dripsy), Gluestack [[1]](https://github.com/gluestack/gluestack-ui) [[2]](https://github.com/gluestack/gluestack-style), [fast-styles](https://github.com/fedemartinm/fast-styles), [Tailwind React Native Classnames(twrnc)](https://github.com/jaredh159/tailwind-react-native-classnames), Shopify's [restyle](https://github.com/Shopify/restyle) and [react-native-unistyles](https://github.com/jpudysz/react-native-unistyles) 
 
 Feel free to fork or PR this repo with improvements or to include other styling libraries.
 
@@ -32,39 +32,38 @@ Mac Specs:
 Mac Studio M1 Ultra 1TB SSD 64GB RAM\
 Simulator: iPhone 13, iOS 16.4
 
-![graph_1.png](assets/graph_1.png)\
-![graph_2.png](assets/graph_2.png)
-
-|             | 1     | 2     | 3     | 4     | 5     | 6     | Avg    | % Slowdown |
-|-------------|-------|-------|-------|-------|-------|-------|--------|------------|
-| Native      | 140.1 | 135.6 | 137.5 | 142.1 | 137.2 | 131.3 | 137.6  | 0          |
-| twrnc       | 159   | 161   | 162   | 158   | 156   | 161   | 159.5  | 15.92%     |
-| fast-styles | 162   | 163   | 166   | 164   | 162   | 168   | 164.17 | 19.30%     |
-| Restyle     | 186.8 | 162.3 | 185.2 | 184.4 | 186.6 | 184.2 | 182.5  | 32.63%     |
-| Zephyr      | 198.4 | 200.2 | 203.6 | 200.7 | 195.8 | 202.5 | 200.2  | 45.47%     |
-| Styled v6   | 227.7 | 226.7 | 229   | 226   | 224   | 225.9 | 226.7  | 64.86%     |
-| Emotion     | 280.1 | 281.7 | 277.5 | 282   | 278.2 | 285   | 280.9  | 104.8%     |
-| NativeWind  | 291.3 | 289   | 295.6 | 293.9 | 292.6 | 294   | 292.9  | 112.3%     |
-| Tamagui     | 310   | 318   | 310   | 305   | 324   | 313   | 314.33 | 128.57%    |
-| Dripsy      | 661.5 | 651.3 | 665.1 | 661.4 | 653.6 | 673.7 | 661.1  | 380.53%    |
-| Gluestack   | 793   | 789   | 815   | 815   | 783   | 779   | 798.83 | 480.24%    |
+|             | 1   | 2   | 3   | 4   | 5   | 6   | Avg    | % Slowdown |
+|-------------|-----|-----|-----|-----|-----|-----|--------|------------|
+| Native      | 142 | 138 | 141 | 143 | 143 | 144 | 141.83 | 0          |
+| Unistyles   | 149 | 144 | 149 | 147 | 149 | 149 | 147.5  | 4%         |
+| twrnc       | 172 | 173 | 163 | 160 | 161 | 161 | 164.16 | 15.74%     |
+| fast-styles | 170 | 167 | 172 | 175 | 172 | 172 | 171.33 | 20.81%     |
+| Restyle     | 188 | 188 | 187 | 189 | 189 | 187 | 188.33 | 32.77%     |
+| Zephyr      | 184 | 195 | 190 | 190 | 192 | 184 | 189.16 | 33.197%    |
+| Styled v6   | 222 | 215 | 230 | 204 | 224 | 230 | 221.83 | 56.47%     |
+| Emotion     | 276 | 267 | 270 | 268 | 276 | 271 | 271.33 | 91.42%     |
+| NativeWind  | 289 | 298 | 301 | 286 | 300 | 295 | 294.83 | 107.99%    |
+| Gluestack   | 291 | 295 | 302 | 298 | 306 | 311 | 301.5  | 112.84%    |
+| Tamagui     | 306 | 304 | 308 | 302 | 304 | 306 | 305.0  | 115.21%    |
+| Dripsy      | 692 | 665 | 690 | 672 | 675 | 681 | 678.33 | 378.99%    |
 
 ### scores with `TAMAGUI_TARGET=native expo start --no-dev --minify`:
 (after every run metro is shut down, always start fresh)
 
 |             | 1   | 2   | 3   | 4   | 5   | 6   | Avg    | % Slowdown |
 |-------------|-----|-----|-----|-----|-----|-----|--------|------------|
-| Native      | 57  | 56  | 54  | 53  | 53  | 53  | 54.33  | 0          |
-| fast-styles | 68  | 66  | 66  | 64  | 66  | 66  | 66.33  | 21.98%     |
-| twrnc       | 68  | 69  | 68  | 68  | 68  | 68  | 68     | 24.93%     |
-| Zephyr      | 75  | 77  | 76  | 77  | 75  | 76  | 76     | 39.29%     |
-| Restyle     | 81  | 80  | 81  | 82  | 80  | 85  | 81.5   | 49.92%     |
-| Styled v6   | 101 | 101 | 98  | 98  | 100 | 99  | 99.83  | 83.27%     |
-| Emotion     | 135 | 132 | 130 | 128 | 128 | 129 | 130.33 | 139.69%    |
-| NativeWind  | 138 | 139 | 139 | 134 | 137 | 137 | 137.33 | 152.17%    |
-| Tamagui     | 173 | 174 | 172 | 172 | 176 | 174 | 173.5  | 219.84%    |
-| Dripsy      | 559 | 557 | 554 | 559 | 561 | 558 | 557.96 | 926.47%    |
-| Gluestack   | 663 | 654 | 661 | 664 | 660 | 660 | 660.33 | 1112.38%   |
+| Native      | 54  | 55  | 53  | 60  | 59  | 56  | 55.5   | 0          |
+| Unistyles   | 57  | 57  | 56  | 58  | 59  | 58  | 57.83  | 4.21%      |
+| fast-styles | 65  | 66  | 66  | 68  | 67  | 64  | 66     | 18.92%     |
+| twrnc       | 66  | 74  | 68  | 66  | 65  | 67  | 67     | 20.72%     |
+| Zephyr      | 76  | 79  | 77  | 78  | 78  | 79  | 77.83  | 40.36%     |
+| Restyle     | 76  | 77  | 78  | 78  | 85  | 78  | 78.33  | 41.08%     |
+| Styled v6   | 100 | 100 | 100 | 100 | 101 | 102 | 100.5  | 81.08%     |
+| Emotion     | 134 | 136 | 135 | 141 | 134 | 136 | 135.33 | 144.86%    |
+| NativeWind  | 144 | 136 | 134 | 139 | 133 | 138 | 137.33 | 147.68%    |
+| Tamagui     | 156 | 151 | 158 | 159 | 156 | 159 | 156.5  | 182.88%    |
+| Gluestack   | 177 | 179 | 175 | 178 | 177 | 178 | 177.66 | 220.97%    |
+| Dripsy      | 538 | 566 | 556 | 564 | 556 | 563 | 556.16 | 904.65%    |
 
 # Reproduction Steps
 1. Start the profiler by pressing Shift + M and open React Dev Tools.
