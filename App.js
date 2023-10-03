@@ -68,25 +68,28 @@ export default function App() {
       <Text style={styles.text}>Tap a style library to start rendering</Text>
       <Button title="React Native" onPress={onStyleTypePress("React Native")} />
       <Button
-        title="Styled Components"
-        onPress={onStyleTypePress("Styled Components")}
+        title="react-native-unistyles"
+        onPress={onStyleTypePress("Unistyles")}
       />
-      <Button title="Tamagui" onPress={onStyleTypePress("Tamagui")} />
-      <Button title="Dripsy" onPress={onStyleTypePress("Dripsy")} />
-      <Button title="Restyle" onPress={onStyleTypePress("Restyle")} />
-      <Button title="NativeWind" onPress={onStyleTypePress("NativeWind")} />
-      <Button
-        title="Emotion Native"
-        onPress={onStyleTypePress("Emotion Native")}
-      />
-      <Button title="Zephyr" onPress={onStyleTypePress("Zephyr")} />
-      <Button title="Gluestack" onPress={onStyleTypePress("Gluestack")} />
+      <Button title="fast-styles" onPress={onStyleTypePress("FastStyles")} />
       <Button
         title="twrnc (tailwind rn class names)"
         onPress={onStyleTypePress("Twrnc")}
       />
-      <Button title="fast-styles" onPress={onStyleTypePress("FastStyles")} />
-      <Button title="react-native-unistyles" onPress={onStyleTypePress("Unistyles")} />
+      <Button title="Zephyr" onPress={onStyleTypePress("Zephyr")} />
+      <Button title="Restyle" onPress={onStyleTypePress("Restyle")} />
+      <Button
+        title="Styled Components"
+        onPress={onStyleTypePress("Styled Components")}
+      />
+      <Button
+        title="Emotion Native"
+        onPress={onStyleTypePress("Emotion Native")}
+      />
+      <Button title="NativeWind" onPress={onStyleTypePress("NativeWind")} />
+      <Button title="Tamagui" onPress={onStyleTypePress("Tamagui")} />
+      <Button title="Gluestack" onPress={onStyleTypePress("Gluestack")} />
+      <Button title="Dripsy" onPress={onStyleTypePress("Dripsy")} />
       {styleType ? (
         <TimedRender key={styleType}>
           <Text style={styles.text}>
