@@ -5,10 +5,12 @@ import { Button, StyleSheet, Text, View } from "react-native";
 import Dripsy from "./components/Dripsy";
 import EmotionNative from "./components/EmotionNative";
 import FastStyles from "./components/FastStyles";
+import Gluestack from "./components/Gluestack";
 import NativeWind from "./components/NativeWind";
 import Native from "./components/ReactNative";
 import Restyle from "./components/Restyle";
 import StyledComponents from "./components/StyledComponents";
+import Tamagui from "./components/Tamagui";
 import TimedRender from "./components/TimedRender";
 import Twrnc from "./components/Twrnc";
 import Unistyles from "./components/Unistyles";
@@ -28,7 +30,7 @@ export default function App() {
       case "Styled Components":
         return <StyledComponents />;
       case "Tamagui":
-      // return <Tamagui />;
+        return <Tamagui />;
       case "Restyle":
         return <Restyle />;
       case "NativeWind":
@@ -40,7 +42,7 @@ export default function App() {
       case "Zephyr":
         return <Zephyr />;
       case "Gluestack":
-      // return <Gluestack />;
+        return <Gluestack />;
       case "Twrnc":
         return <Twrnc />;
       case "FastStyles":
