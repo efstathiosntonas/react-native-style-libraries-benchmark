@@ -3,7 +3,10 @@ process.env.TAMAGUI_TARGET = "native"; // Don't forget to specify your TAMAGUI_T
 module.exports = function (api) {
   api.cache(true);
   return {
-    presets: ["babel-preset-expo"],
+    presets: [
+      ["babel-preset-expo", { jsxImportSource: "nativewind" }],
+      "nativewind/babel",
+    ],
     plugins: [
       ["@gluestack-style/babel-plugin-styled-resolver"],
       [
@@ -20,7 +23,6 @@ module.exports = function (api) {
           include: "TAMAGUI_TARGET",
         },
       ],
-      "nativewind/babel",
     ],
   };
 };
