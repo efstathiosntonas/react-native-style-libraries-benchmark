@@ -1,7 +1,7 @@
 {
   "name": "styledcomponents",
   "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
+  "main": "index.js",
   "scripts": {
     "start-native": "TAMAGUI_TARGET=native expo start -c",
     "start-native-release-mode": "TAMAGUI_TARGET=native expo start --no-dev --minify",
@@ -11,6 +11,7 @@
     "web": "TAMAGUI_TARGET=web expo start --web"
   },
   "dependencies": {
+    "@crossed/styled": "0.14.0-beta.3",
     "@emotion/native": "11.11.0",
     "@emotion/react": "11.11.1",
     "@fast-styles/react": "^0.2.9",
@@ -31,15 +32,16 @@
     "@types/react": "18.2.20",
     "babel-plugin-transform-inline-environment-variables": "0.4.4",
     "dripsy": "4.3.3",
-    "expo": "49.0.13",
-    "expo-font": "11.6.0",
-    "expo-splash-screen": "0.22.0",
-    "expo-status-bar": "1.7.1",
+    "expo": "50.0.14",
+    "expo-font": "11.10.3",
+    "expo-router": "3.4.8",
+    "expo-splash-screen": "0.26.4",
+    "expo-status-bar": "1.11.1",
     "gluestack-ui": "2.0.1",
     "nativewind": "2.0.11",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-native": "0.72.5",
+    "react-native": "0.73.6",
     "react-native-unistyles": "^1.0.0-beta.1",
     "react-native-web": "0.19.9",
     "react-native-zephyr": "1.1.2",
@@ -54,7 +56,8 @@
     "@types/react-native": "0.72.3",
     "react-native": "0.72.5",
     "react-native-web": "0.19.9",
-    "tailwindcss": "3.3.2"
+    "tailwindcss": "3.3.2",
+    "typescript": "^5.4.2"
   },
   "private": true
 }

@@ -1417,6 +1417,18 @@
     "@babel/helper-validator-identifier" "^7.22.20"
     to-fast-properties "^2.0.0"
 
+"@crossed/core@^0.8.1-beta.0":
+  version "0.8.1-beta.0"
+  resolved "https://registry.yarnpkg.com/@crossed/core/-/core-0.8.1-beta.0.tgz#af5db4f48df5565a44b01849e916b9e5870ea0fa"
+  integrity sha512-FV0v6gD/B5KlxsJL9joAX13qjHE0W5IcRyY+WWJP69VAqfTOCf+taefskF3poJ4FfHIwXsuLpkEZdfbSrqvS+A==
+
+"@crossed/styled@0.14.0-beta.3":
+  version "0.14.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@crossed/styled/-/styled-0.14.0-beta.3.tgz#1996ca9bffa6cf499b965ca097aa9f3ea7c7076b"
+  integrity sha512-jrH1p5mXgv6jrMhOQ/6yKPSNTv91caM+TP/4Likl+GvLF0U9pVadlOeg00+1DY1dLoNAw/8XMueV4RV1UUIRWA==
+  dependencies:
+    "@crossed/core" "^0.8.1-beta.0"
+
 "@emotion/babel-plugin@^11.11.0":
   version "11.11.0"
   resolved "https://registry.yarnpkg.com/@emotion/babel-plugin/-/babel-plugin-11.11.0.tgz#c2d872b6a7767a9d176d007f5b31f7d504bb5d6c"
