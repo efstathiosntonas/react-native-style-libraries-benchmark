@@ -12,18 +12,14 @@ const styleSheet = createStyles({
 });
 
 const CrossedStyled = () => {
+  const { root } = useStyles(styleSheet);
   return (
     <View style={{ display: "flex", flexDirection: "row" }}>
       {new Array(COUNT).fill(0).map((_, i) => (
-        <Demo key={i} />
+        <View key={i} {...root} />
       ))}
     </View>
   );
 };
-
-function Demo () {
-  const { root } = useStyles(styleSheet);
-  return <View {...root} />
-}
 
 export default CrossedStyled;

@@ -9,6 +9,8 @@ import Gluestack from "../components/Gluestack";
 import NativeWind from "../components/NativeWind";
 import Native from "../components/ReactNative";
 import CrossedStyled from "../components/CrossedStyled";
+import CrossedStyledWithStyle from "../components/CrossedStyledWithStyle";
+import CrossedStyledUseStyleGlobal from "../components/CrossedStyledUseStyleGlobal";
 import Restyle from "../components/Restyle";
 import StyledComponents from "../components/StyledComponents";
 // import Tamagui from "../components/Tamagui";
@@ -41,6 +43,10 @@ export default function App() {
       //   return <EmotionNative />;
       case "CrossedStyled":
         return <CrossedStyled />;
+      case "CrossedStyledWithStyle":
+        return <CrossedStyledWithStyle />;
+      case "CrossedStyledUseStyleGlobal":
+        return <CrossedStyledUseStyleGlobal />;
       case "Zephyr":
         return <Zephyr />;
       case "Gluestack":
@@ -94,6 +100,14 @@ export default function App() {
       <Button
         title="CrossedStyled"
         onPress={onStyleTypePress("CrossedStyled")}
+      />
+      <Button
+        title="CrossedStyledWithStyle"
+        onPress={onStyleTypePress("CrossedStyledWithStyle")}
+      />
+      <Button
+        title="CrossedStyledUseStyleGlobal"
+        onPress={onStyleTypePress("CrossedStyledUseStyleGlobal")}
       />
       {/* <Button title="Dripsy" onPress={onStyleTypePress("Dripsy")} /> */}
       {styleType ? (
