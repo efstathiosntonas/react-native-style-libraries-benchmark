@@ -1,20 +1,21 @@
-import { useFonts } from "expo-font";
-import { useState } from "react";
-import { Button, StyleSheet, Text, View } from "react-native";
+import { useFonts } from 'expo-font';
+import { useState } from 'react';
+import { Button, StyleSheet, Text, View } from 'react-native';
 
-import Dripsy from "./components/Dripsy";
-import EmotionNative from "./components/EmotionNative";
-import Gluestack from "./components/Gluestack";
-import NativeWind from "./components/NativeWind";
-import Native from "./components/ReactNative";
-import Restyle from "./components/Restyle";
-import StyledComponents from "./components/StyledComponents";
-import Tamagui from "./components/Tamagui";
-import TimedRender from "./components/TimedRender";
-import Twrnc from "./components/Twrnc";
-import { Zephyr } from "./components/Zephyr";
-import FastStyles from "./components/FastStyles";
-import Unistyles from "./components/Unistyles";
+import Dripsy from './components/Dripsy';
+import EmotionNative from './components/EmotionNative';
+import Gluestack from './components/Gluestack';
+import NativeWind from './components/NativeWind';
+import Native from './components/ReactNative';
+import Restyle from './components/Restyle';
+import StyledComponents from './components/StyledComponents';
+import Tamagui from './components/Tamagui';
+import TimedRender from './components/TimedRender';
+import Twrnc from './components/Twrnc';
+import { Zephyr } from './components/Zephyr';
+import FastStyles from './components/FastStyles';
+import Unistyles from './components/Unistyles';
+import { ReactNativeStyledSystem } from './components/ReactNativeStyledSystem';
 
 export default function App() {
   const [styleType, setStyleType] = useState(undefined);
@@ -49,6 +50,8 @@ export default function App() {
         return <FastStyles />;
       case "Unistyles":
         return <Unistyles />;
+      case "ReactNativeStyledSystem":
+        return <ReactNativeStyledSystem />;
       default:
         return null;
     }
@@ -90,6 +93,7 @@ export default function App() {
       <Button title="Tamagui" onPress={onStyleTypePress("Tamagui")} />
       <Button title="Gluestack" onPress={onStyleTypePress("Gluestack")} />
       <Button title="Dripsy" onPress={onStyleTypePress("Dripsy")} />
+      <Button title="ReactNativeStyledSystem" onPress={onStyleTypePress("ReactNativeStyledSystem")} />
       {styleType ? (
         <TimedRender key={styleType}>
           <Text style={styles.text}>
