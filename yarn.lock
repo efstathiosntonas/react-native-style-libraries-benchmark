@@ -2782,6 +2782,11 @@
   resolved "https://registry.yarnpkg.com/@legendapp/tools/-/tools-2.0.1.tgz#995fe6cb3e2398b939f645505aa8e1abc84bd07f"
   integrity sha512-Kxt0HWvWElRK6oybHRzcYxdgaKGwuaiRNreS7usW7QuHXRIHaH4yMcW2YNRG4DHE5fpefv+Bno/BohQcCE4FaA==
 
+"@mj-studio/js-util@1.0.34":
+  version "1.0.34"
+  resolved "https://registry.yarnpkg.com/@mj-studio/js-util/-/js-util-1.0.34.tgz#8cbd312e48c391a4095fe22f76fa983124bee266"
+  integrity sha512-7nhv+/n9goeT87qq2KXn/9csqjuyFcbdF127PMaozMlGk2Q8fBEDUThsHQEbG3VS7UD6iz26zdc7tW6FaWk1Sw==
+
 "@motionone/animation@^10.12.0":
   version "10.16.3"
   resolved "https://registry.yarnpkg.com/@motionone/animation/-/animation-10.16.3.tgz#f5b71e27fd8b88b61f983adb0ed6c8e3e89281f9"
@@ -3409,6 +3414,15 @@
     graceful-fs "^4.1.3"
     prompts "^2.4.0"
     semver "^7.5.2"
+
+"@react-native-styled-system/core@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@react-native-styled-system/core/-/core-1.2.0.tgz#7ea0ea18bc7265674aad62a2386e7f39e91abd72"
+  integrity sha512-IEFpTKG8QxS+Fugn0izDRe6uAQopC/vluUrr+it+CEfACwhS77eu6AOFLMlbWLjmTKrkIISXI3HTxOU5R5TpUA==
+  dependencies:
+    "@mj-studio/js-util" "1.0.34"
+    invariant "^2.2.4"
+    object-hash "^3.0.0"
 
 "@react-native/assets-registry@^0.72.0":
   version "0.72.0"

@@ -19,6 +19,7 @@
     "@gluestack-ui/provider": "0.1.10",
     "@gluestack-ui/themed": "^0.1.53",
     "@gluestack-ui/vstack": "0.1.11",
+    "@react-native-styled-system/core": "^1.2.0",
     "@shopify/restyle": "2.4.2",
     "@tamagui/animations-react-native": "1.74.8",
     "@tamagui/config": "1.74.8",
