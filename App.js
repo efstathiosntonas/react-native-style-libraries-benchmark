@@ -4,7 +4,7 @@ import { Button, StyleSheet, Text, View } from "react-native";
 
 import Dripsy from "./components/Dripsy";
 import EmotionNative from "./components/EmotionNative";
-import Gluestack from "./components/Gluestack";
+// import Gluestack from "./components/Gluestack";
 import NativeWind from "./components/NativeWind";
 import Native from "./components/ReactNative";
 import Restyle from "./components/Restyle";
@@ -41,8 +41,8 @@ export default function App() {
         return <Dripsy />;
       case "Zephyr":
         return <Zephyr />;
-      case "Gluestack":
-        return <Gluestack />;
+      // case "Gluestack":
+      //   return <Gluestack />;
       case "Twrnc":
         return <Twrnc />;
       case "FastStyles":
@@ -88,7 +88,7 @@ export default function App() {
       />
       <Button title="NativeWind" onPress={onStyleTypePress("NativeWind")} />
       <Button title="Tamagui" onPress={onStyleTypePress("Tamagui")} />
-      <Button title="Gluestack" onPress={onStyleTypePress("Gluestack")} />
+      {/* <Button title="Gluestack" onPress={onStyleTypePress("Gluestack")} /> */}
       <Button title="Dripsy" onPress={onStyleTypePress("Dripsy")} />
       {styleType ? (
         <TimedRender key={styleType}>
