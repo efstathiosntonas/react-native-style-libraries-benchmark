@@ -1,3 +1,5 @@
+import { StyleSheet } from "react-native-unistyles";
+
 const palette = {
   red: "red",
 }
@@ -8,11 +10,14 @@ const theme = {
   },
   spacing: {
     xs: 5,
-    s: 8,
+    s: 10,
     m: 16,
     l: 24,
     xl: 40,
   },
 };
 
-export default theme;
+StyleSheet.configure({
+  themes: { light: theme, dark: theme },
+  settings: { initialTheme: "light" },
+});

@@ -5,6 +5,7 @@
  */
 const { getDefaultConfig } = require("@expo/metro-config");
 const { withNativeWind } = require("nativewind/metro");
+// const { withTamagui } = require('@tamagui/metro-plugin');
 
 const path = require("path");
 
@@ -19,7 +20,6 @@ module.exports = withNativeWind(config, {
     configPath: tailwindConfigPath,
     input: globalCSS,
     projectRoot,
-    inlineRem: false,
     features: {
         transformPercentagePolyfill: true,
     }

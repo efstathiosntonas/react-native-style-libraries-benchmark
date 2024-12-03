@@ -1,4 +1,7 @@
 import { registerRootComponent } from 'expo';
+
+import "./themes/unistyles-theme";
+import "./styles/global.css";
 import App from './App';
 
 // registerRootComponent calls AppRegistry.registerComponent('main', () => App);
