@@ -6,7 +6,6 @@ export const xCache = new Map();
 export const shorthand = {
     f: 'flex',
     fd: 'flexDirection',
-    fr: 'flexWrap',
     jc: 'justifyContent',
     ai: 'alignItems',
     ac: 'alignContent',
