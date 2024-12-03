@@ -18,14 +18,13 @@ Read this comment on how to test the performance: https://github.com/styled-comp
 
 ![demo.png](assets/demo.png)
 
-
 Demo video with `npx expo start -c --no-dev --minify`:
 
-https://github.com/user-attachments/assets/71fe8c4c-abd1-4694-96d1-626aae814ef9
+https://github.com/user-attachments/assets/32a09a21-bd69-49fe-9a0f-9bf8d82405a1
 
 Here's another video demonstrating the performance difference and on press toggle.
 
-https://github.com/user-attachments/assets/05d71bf1-6f56-429d-869f-fc386d2c064c
+https://github.com/user-attachments/assets/8007fa50-0bcc-454b-8fc4-66fe8ce032f6
 
 
 ## Results - Rendering Time for 250 Views (ms) in `npx expo start --no-dev --minify` (after every run metro is shut down, always start fresh):
