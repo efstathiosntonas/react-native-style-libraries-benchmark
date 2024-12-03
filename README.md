@@ -10,7 +10,7 @@ Feel free to fork or PR this repo with improvements or to include other styling 
 
 ### ***Note: Test scores may vary between different machines with different hardware***
 
-> Note: `Restyle` scores are surprisingly impressive, but `react-native-unistyles` is the slowest, especially on the new v3, I'm not sure why.
+> `Restyle` scores are remarkably impressive. While the stable version of `react-native-unistyles` performs well compared to Native StyleSheet, the latest **beta (v3)** version is significantly slower.
 
 250 items are rendered in `Array.map` and it's a **basic** test in DEV mode. When more features of each library are added (eg. media queries etc) as your project grows the measurements may vary by a lot.
 
@@ -38,8 +38,8 @@ Simulator: iPhone 11, iOS 18.1
 | Native      | 696  | 738  | 711  | 712  | 726  | 684  | 711.27  | 0.00%      |
 | Restyle     | 612  | 622  | 654  | 621  | 621  | 623  | 625.50  | -12.05%    |
 | Emotion     | 661  | 657  | 659  | 660  | 661  | 685  | 663.83  | -6.66%     |
-| Styled v6   | 772  | 709  | 616  | 614  | 647  | 725  | 680.50  | -4.31%     |
 | Tamagui     | 667  | 666  | 753  | 647  | 648  | 701  | 680.33  | -4.34%     |
+| Styled v6   | 772  | 709  | 616  | 614  | 647  | 725  | 680.50  | -4.31%     |
 | NativeWind  | 734  | 672  | 699  | 677  | 706  | 743  | 705.17  | -0.84%     |
 | fast-styles | 725  | 705  | 706  | 730  | 715  | 683  | 710.67  | -0.07%     |
 | Zephyr      | 743  | 747  | 739  | 713  | 749  | 701  | 732.00  | 2.93%      |
