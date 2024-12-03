@@ -8,7 +8,6 @@ module.exports = function (api) {
       "nativewind/babel",
     ],
     plugins: [
-      ["@gluestack-style/babel-plugin-styled-resolver"],
       [
         "@tamagui/babel-plugin",
         {
