@@ -2,70 +2,53 @@
 
 Original reproducer was created by @tj-mc: https://github.com/tj-mc/styled-components-native-perf-reproducer
 
-This is an Expo SDK 49 App reproducer to demonstrate the performance difference between popular style libraries and react-native built-in styling.
+This is an Expo SDK 52 App reproducer to demonstrate the performance difference between popular style libraries and react-native built-in styling.
 
-Tests include React Native [StyleSheet](https://reactnative.dev/docs/stylesheet), [Styled Components](https://github.com/styled-components/styled-components), [Tamagui](https://github.com/tamagui/tamagui), [NativeWind](https://github.com/marklawlor/nativewind), [Emotion](https://github.com/emotion-js/emotion), [Zephyr](https://github.com/FormidableLabs/react-native-zephyr), [Dripsy](https://github.com/nandorojo/dripsy), Gluestack [[1]](https://github.com/gluestack/gluestack-ui) [[2]](https://github.com/gluestack/gluestack-style), [fast-styles](https://github.com/fedemartinm/fast-styles), [Tailwind React Native Classnames(twrnc)](https://github.com/jaredh159/tailwind-react-native-classnames), Shopify's [restyle](https://github.com/Shopify/restyle) and [react-native-unistyles](https://github.com/jpudysz/react-native-unistyles) 
+Tests include React Native [StyleSheet](https://reactnative.dev/docs/stylesheet), [Styled Components](https://github.com/styled-components/styled-components), [Tamagui](https://github.com/tamagui/tamagui), [NativeWind](https://github.com/marklawlor/nativewind), [Emotion](https://github.com/emotion-js/emotion), [Zephyr](https://github.com/FormidableLabs/react-native-zephyr), [Dripsy](https://github.com/nandorojo/dripsy), [fast-styles](https://github.com/fedemartinm/fast-styles), [Tailwind React Native Classnames(twrnc)](https://github.com/jaredh159/tailwind-react-native-classnames), Shopify's [restyle](https://github.com/Shopify/restyle) and [react-native-unistyles](https://github.com/jpudysz/react-native-unistyles) 
 
 Feel free to fork or PR this repo with improvements or to include other styling libraries.
 
 ### ***Note: Test scores may vary between different machines with different hardware***
 
-~~Note: `Tamagui` scores are surprisingly low, I've created a [discussion about it](https://github.com/tamagui/tamagui/discussions/1471)~~
- 
-#### Note: Tamagui compiler is turned off in DEV mode, production/release performance is greatly improved, it reaches `StyleSheet` levels.
+> `Restyle` scores are remarkably impressive, `tamagui`, `react-native-unistyles` and `nativewind` shows great performance compared to `Native StyleSheet`.
 
-1000 items are rendered in `Array.map` and it's a **basic** test in DEV mode. When more features of each library are added (eg. media queries etc) as your project grows the measurements may vary by a lot.
+250 items are rendered in `Array.map` and it's a **basic** test in DEV mode. When more features of each library are added (eg. media queries etc) as your project grows the measurements may vary by a lot.
 
 Read this comment on how to test the performance: https://github.com/styled-components/styled-components/issues/3940#issuecomment-1630244738
 
 ![demo.png](assets/demo.png)
 
-Demo video with `TAMAGUI_TARGET=native expo start --no-dev --minify`:
+Demo video with `npx expo start -c --no-dev --minify`:
+
+https://github.com/user-attachments/assets/32a09a21-bd69-49fe-9a0f-9bf8d82405a1
+
+Here's another video demonstrating the performance difference and on press toggle.
+
+https://github.com/user-attachments/assets/8007fa50-0bcc-454b-8fc4-66fe8ce032f6
 
 
-https://github.com/efstathiosntonas/react-native-style-libraries-benchmark/assets/717975/9942825e-2e97-47ac-9311-0df98718b3b1
+## Results - Rendering Time for 250 Views (ms) in `npx expo start --no-dev --minify` (after every run metro is shut down, always start fresh):
 
+Mac Specs:
+MacBook Pro 13-inch, Intel Core i7, 256GB SSD 16GB RAM\
+Simulator: iPhone 11, iOS 18.1
 
-## Results - Rendering Time for 1000 Empty Views (ms) in DEV mode
-
-Mac Specs: 
-Mac Studio M1 Ultra 1TB SSD 64GB RAM\
-Simulator: iPhone 13, iOS 16.4
-
-|             | 1   | 2   | 3   | 4   | 5   | 6   | Avg    | % Slowdown |
+|UI           | 1   | 2   | 3   | 4   | 5   | 6   | Avg    | % Slowdown |
 |-------------|-----|-----|-----|-----|-----|-----|--------|------------|
-| Native      | 142 | 138 | 141 | 143 | 143 | 144 | 141.83 | 0          |
-| Unistyles   | 149 | 144 | 149 | 147 | 149 | 149 | 147.5  | 4%         |
-| twrnc       | 172 | 173 | 163 | 160 | 161 | 161 | 164.16 | 15.74%     |
-| fast-styles | 170 | 167 | 172 | 175 | 172 | 172 | 171.33 | 20.81%     |
-| Restyle     | 188 | 188 | 187 | 189 | 189 | 187 | 188.33 | 32.77%     |
-| Zephyr      | 184 | 195 | 190 | 190 | 192 | 184 | 189.16 | 33.197%    |
-| Styled v6   | 222 | 215 | 230 | 204 | 224 | 230 | 221.83 | 56.47%     |
-| Emotion     | 276 | 267 | 270 | 268 | 276 | 271 | 271.33 | 91.42%     |
-| NativeWind  | 289 | 298 | 301 | 286 | 300 | 295 | 294.83 | 107.99%    |
-| Gluestack   | 291 | 295 | 302 | 298 | 306 | 311 | 301.5  | 112.84%    |
-| Tamagui     | 306 | 304 | 308 | 302 | 304 | 306 | 305.0  | 115.21%    |
-| Dripsy      | 692 | 665 | 690 | 672 | 675 | 681 | 678.33 | 378.99%    |
-
-### scores with `TAMAGUI_TARGET=native expo start --no-dev --minify`:
-(after every run metro is shut down, always start fresh)
-
-|             | 1   | 2   | 3   | 4   | 5   | 6   | Avg    | % Slowdown |
-|-------------|-----|-----|-----|-----|-----|-----|--------|------------|
-| Native      | 54  | 55  | 53  | 60  | 59  | 56  | 55.5   | 0          |
-| Unistyles   | 57  | 57  | 56  | 58  | 59  | 58  | 57.83  | 4.21%      |
-| fast-styles | 65  | 66  | 66  | 68  | 67  | 64  | 66     | 18.92%     |
-| twrnc       | 66  | 74  | 68  | 66  | 65  | 67  | 67     | 20.72%     |
-| Zephyr      | 76  | 79  | 77  | 78  | 78  | 79  | 77.83  | 40.36%     |
-| Restyle     | 76  | 77  | 78  | 78  | 85  | 78  | 78.33  | 41.08%     |
-| Styled v6   | 100 | 100 | 100 | 100 | 101 | 102 | 100.5  | 81.08%     |
-| Emotion     | 134 | 136 | 135 | 141 | 134 | 136 | 135.33 | 144.86%    |
-| NativeWind  | 144 | 136 | 134 | 139 | 133 | 138 | 137.33 | 147.68%    |
-| Tamagui     | 156 | 151 | 158 | 159 | 156 | 159 | 156.5  | 182.88%    |
-| Gluestack   | 177 | 179 | 175 | 178 | 177 | 178 | 177.66 | 220.97%    |
-| Dripsy      | 538 | 566 | 556 | 564 | 556 | 563 | 556.16 | 904.65%    |
+| Native      | 696 | 738 | 711 | 712 | 726 | 684 | 711.27 | 0.00%      |
+| Restyle     | 612 | 622 | 654 | 621 | 621 | 623 | 625.50 | -12.05%    |
+| Emotion     | 661 | 657 | 659 | 660 | 661 | 685 | 663.83 | -6.66%     |
+| Tamagui     | 667 | 666 | 753 | 647 | 648 | 701 | 680.33 | -4.34%     |
+| Styled v6   | 772 | 709 | 616 | 614 | 647 | 725 | 680.50 | -4.31%     |
+| Unistyles   | 668 | 698 | 693 | 691 | 712 | 722 | 697.33 | -1.96%     |
+| NativeWind  | 734 | 672 | 699 | 677 | 706 | 743 | 705.17 | -0.84%     |
+| fast-styles | 725 | 705 | 706 | 730 | 715 | 683 | 710.67 | -0.07%     |
+| twrnc       | 659 | 763 | 745 | 776 | 693 | 735 | 728.50 | 2.44%      |
+| Zephyr      | 743 | 747 | 739 | 713 | 749 | 701 | 732.00 | 2.93%      |
+| Dripsy      | 774 | 804 | 740 | 875 | 781 | 819 | 798.83 | 12.33%     |
 
 # Reproduction Steps
+
 1. Start the profiler by pressing Shift + M and open React Dev Tools.
 2. Open profiler and hit record
 3. Press the toggle button and stop recording
