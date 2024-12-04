@@ -10,7 +10,7 @@ Feel free to fork or PR this repo with improvements or to include other styling 
 
 ### ***Note: Test scores may vary between different machines with different hardware***
 
-> `Restyle` scores are remarkably impressive. While the stable version of `react-native-unistyles` performs well compared to Native StyleSheet, the latest **beta (v3)** version is significantly slower.
+> `Restyle` scores are remarkably impressive. however `react-native-unistyles` performs significantly slow, the latest **beta (v3)** version is even slower.
 
 250 items are rendered in `Array.map` and it's a **basic** test in DEV mode. When more features of each library are added (eg. media queries etc) as your project grows the measurements may vary by a lot.
 
@@ -45,9 +45,9 @@ Simulator: iPhone 11, iOS 18.1
 | Zephyr      | 743  | 747  | 739  | 713  | 749  | 701  | 732.00  | 2.93%      |
 | twrnc       | 659  | 763  | 745  | 776  | 693  | 735  | 728.50  | 2.44%      |
 | Dripsy      | 774  | 804  | 740  | 875  | 781  | 819  | 798.83  | 12.33%     |
-| Unistyles   | 2777 | 2953 | 2828 | 2822 | 2826 | 2912 | 2853.00 | 301.17%    |
+| Unistyles   | 2518 | 2850 | 2768 | 2785 | 2817 | 2971 | 2784.83 | 291.56%    |
 
-> Unistyles has the largest slowdown at 301.17%, whereas Dripsy has 12.33% slowdown compared to Native.
+> Unistyles has the largest slowdown at 291.56%, whereas Dripsy has 12.33% slowdown compared to Native.
 
 # Reproduction Steps
 

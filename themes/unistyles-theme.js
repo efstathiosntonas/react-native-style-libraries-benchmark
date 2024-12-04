@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native-unistyles";
+import { UnistylesRegistry } from "react-native-unistyles";
 
 const palette = {
   red: "red",
@@ -17,7 +17,9 @@ const theme = {
   },
 };
 
-StyleSheet.configure({
-  themes: { light: theme, dark: theme },
-  settings: { initialTheme: "light" },
+UnistylesRegistry.addThemes({
+  light: theme,
+  dark: theme,
+}).addConfig({
+  initialTheme: "light",
 });
