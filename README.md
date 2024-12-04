@@ -10,7 +10,7 @@ Feel free to fork or PR this repo with improvements or to include other styling 
 
 ### ***Note: Test scores may vary between different machines with different hardware***
 
-> `Restyle` scores are remarkably impressive. however `react-native-unistyles` performs significantly slow, the latest **beta (v3)** version is even slower.
+> `Restyle` scores are remarkably impressive. however `react-native-unistyles` performs significantly slow, the latest [**beta (v3)**](https://github.com/divineniiquaye/react-native-style-libraries-benchmark/tree/unistyles-v3) version is even slower.
 
 250 items are rendered in `Array.map` and it's a **basic** test in DEV mode. When more features of each library are added (eg. media queries etc) as your project grows the measurements may vary by a lot.
 
