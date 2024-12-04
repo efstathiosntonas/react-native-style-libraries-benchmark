@@ -6,7 +6,6 @@ module.exports = function (api) {
       "nativewind/babel",
     ],
     plugins: [
-      "react-native-unistyles/plugin",
       "@fast-styles/babel-plugin",
       [
         "@tamagui/babel-plugin",

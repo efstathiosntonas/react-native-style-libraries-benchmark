@@ -1,8 +1,9 @@
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
-import { StyleSheet } from 'react-native-unistyles';
+import { createStyleSheet, UnistylesProvider, useStyles } from 'react-native-unistyles';
 
 const Demo = () => {
+    const { styles } = useStyles(stylesheet);
     return (
         <View style={styles.container}>
             {new Array(1000).fill(0).map((_, i) => (
@@ -21,7 +22,7 @@ const Demo = () => {
     );
 };
 
-const styles = StyleSheet.create(theme => ({
+const stylesheet = createStyleSheet(theme => ({
     container: {
         display: 'flex',
         flexDirection: 'row',
@@ -54,4 +55,8 @@ const styles = StyleSheet.create(theme => ({
     },
 }));
 
-export default Demo;
+export default () => (
+    <UnistylesProvider>
+        <Demo />
+    </UnistylesProvider>
+)
