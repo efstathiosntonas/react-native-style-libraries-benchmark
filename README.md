@@ -10,7 +10,7 @@ Feel free to fork or PR this repo with improvements or to include other styling 
 
 ### ***Note: Test scores may vary between different machines with different hardware***
 
-> `Restyle` scores are remarkably impressive. however `react-native-unistyles` performs significantly slow, the latest [**beta (v3)**](https://github.com/divineniiquaye/react-native-style-libraries-benchmark/tree/unistyles-v3) version is even slower.
+> `Restyle` scores are remarkably impressive, `tamagui`, `react-native-unistyles` and `nativewind` shows great performance compared to `Native StyleSheet`.
 
 250 items are rendered in `Array.map` and it's a **basic** test in DEV mode. When more features of each library are added (eg. media queries etc) as your project grows the measurements may vary by a lot.
 
@@ -33,21 +33,19 @@ Mac Specs:
 MacBook Pro 13-inch, Intel Core i7, 256GB SSD 16GB RAM\
 Simulator: iPhone 11, iOS 18.1
 
-|UI           | 1    | 2    | 3    | 4    | 5    | 6    | Avg     | % Slowdown |
-|-------------|------|------|------|------|------|------|---------|------------|
-| Native      | 696  | 738  | 711  | 712  | 726  | 684  | 711.27  | 0.00%      |
-| Restyle     | 612  | 622  | 654  | 621  | 621  | 623  | 625.50  | -12.05%    |
-| Emotion     | 661  | 657  | 659  | 660  | 661  | 685  | 663.83  | -6.66%     |
-| Tamagui     | 667  | 666  | 753  | 647  | 648  | 701  | 680.33  | -4.34%     |
-| Styled v6   | 772  | 709  | 616  | 614  | 647  | 725  | 680.50  | -4.31%     |
-| NativeWind  | 734  | 672  | 699  | 677  | 706  | 743  | 705.17  | -0.84%     |
-| fast-styles | 725  | 705  | 706  | 730  | 715  | 683  | 710.67  | -0.07%     |
-| Zephyr      | 743  | 747  | 739  | 713  | 749  | 701  | 732.00  | 2.93%      |
-| twrnc       | 659  | 763  | 745  | 776  | 693  | 735  | 728.50  | 2.44%      |
-| Dripsy      | 774  | 804  | 740  | 875  | 781  | 819  | 798.83  | 12.33%     |
-| Unistyles   | 2518 | 2850 | 2768 | 2785 | 2817 | 2971 | 2784.83 | 291.56%    |
-
-> Unistyles has the largest slowdown at 291.56%, whereas Dripsy has 12.33% slowdown compared to Native.
+|UI           | 1   | 2   | 3   | 4   | 5   | 6   | Avg    | % Slowdown |
+|-------------|-----|-----|-----|-----|-----|-----|--------|------------|
+| Native      | 696 | 738 | 711 | 712 | 726 | 684 | 711.27 | 0.00%      |
+| Restyle     | 612 | 622 | 654 | 621 | 621 | 623 | 625.50 | -12.05%    |
+| Emotion     | 661 | 657 | 659 | 660 | 661 | 685 | 663.83 | -6.66%     |
+| Tamagui     | 667 | 666 | 753 | 647 | 648 | 701 | 680.33 | -4.34%     |
+| Styled v6   | 772 | 709 | 616 | 614 | 647 | 725 | 680.50 | -4.31%     |
+| Unistyles   | 668 | 698 | 693 | 691 | 712 | 722 | 697.33 | -1.96%     |
+| NativeWind  | 734 | 672 | 699 | 677 | 706 | 743 | 705.17 | -0.84%     |
+| fast-styles | 725 | 705 | 706 | 730 | 715 | 683 | 710.67 | -0.07%     |
+| twrnc       | 659 | 763 | 745 | 776 | 693 | 735 | 728.50 | 2.44%      |
+| Zephyr      | 743 | 747 | 739 | 713 | 749 | 701 | 732.00 | 2.93%      |
+| Dripsy      | 774 | 804 | 740 | 875 | 781 | 819 | 798.83 | 12.33%     |
 
 # Reproduction Steps
 
