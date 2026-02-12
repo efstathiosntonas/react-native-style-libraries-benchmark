@@ -15,6 +15,7 @@ import { Zephyr } from "./components/Zephyr";
 import FastStyles from "./components/FastStyles";
 import Unistyles from "./components/Unistyles";
 import VStyles from "./components/VStyles";
+import ReactNativeStyledSystem from "./components/ReactNativeStyledSystem";
 import { StyleSheet } from "react-native";
 
 export default function App() {
@@ -50,6 +51,8 @@ export default function App() {
         return <FastStyles />;
       case "Unistyles":
         return <Unistyles />;
+      case "ReactNativeStyledSystem":
+        return <ReactNativeStyledSystem />;
       default:
         return null;
     }
@@ -90,6 +93,10 @@ export default function App() {
       <Button
         title="react-native-unistyles"
         onPress={onStyleTypePress("Unistyles")}
+      />
+      <Button
+        title="react-native-styled-system"
+        onPress={onStyleTypePress("ReactNativeStyledSystem")}
       />
       {styleType ? (
         <TimedRender key={styleType}>

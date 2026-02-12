@@ -4,7 +4,7 @@ Original reproducer was created by @tj-mc: https://github.com/tj-mc/styled-compo
 
 This is an Expo SDK 52 App reproducer to demonstrate the performance difference between popular style libraries and react-native built-in styling.
 
-Tests include React Native [StyleSheet](https://reactnative.dev/docs/stylesheet), [Styled Components](https://github.com/styled-components/styled-components), [Tamagui](https://github.com/tamagui/tamagui), [NativeWind](https://github.com/marklawlor/nativewind), [Emotion](https://github.com/emotion-js/emotion), [Zephyr](https://github.com/FormidableLabs/react-native-zephyr), [Dripsy](https://github.com/nandorojo/dripsy), [fast-styles](https://github.com/fedemartinm/fast-styles), [Tailwind React Native Classnames(twrnc)](https://github.com/jaredh159/tailwind-react-native-classnames), Shopify's [restyle](https://github.com/Shopify/restyle) and [react-native-unistyles](https://github.com/jpudysz/react-native-unistyles) 
+Tests include React Native [StyleSheet](https://reactnative.dev/docs/stylesheet), [Styled Components](https://github.com/styled-components/styled-components), [Tamagui](https://github.com/tamagui/tamagui), [NativeWind](https://github.com/marklawlor/nativewind), [Emotion](https://github.com/emotion-js/emotion), [Zephyr](https://github.com/FormidableLabs/react-native-zephyr), [Dripsy](https://github.com/nandorojo/dripsy), [fast-styles](https://github.com/fedemartinm/fast-styles), [Tailwind React Native Classnames(twrnc)](https://github.com/jaredh159/tailwind-react-native-classnames), Shopify's [restyle](https://github.com/Shopify/restyle), [react-native-unistyles](https://github.com/jpudysz/react-native-unistyles) and [react-native-styled-system](https://github.com/mj-studio-library/react-native-styled-system)
 
 Feel free to fork or PR this repo with improvements or to include other styling libraries.
 
@@ -46,6 +46,7 @@ Simulator: iPhone 11, iOS 18.1
 | twrnc       | 659 | 763 | 745 | 776 | 693 | 735 | 728.50 | 2.44%      |
 | Zephyr      | 743 | 747 | 739 | 713 | 749 | 701 | 732.00 | 2.93%      |
 | Dripsy      | 774 | 804 | 740 | 875 | 781 | 819 | 798.83 | 12.33%     |
+| styled-system | NaN | NaN | NaN | NaN | NaN | NaN | NaN  | NaN        |
 
 # Reproduction Steps
 

@@ -9,6 +9,7 @@
     "ios": "expo run:ios"
   },
   "dependencies": {
+    "@react-native-styled-system/core": "1.4.4",
     "@emotion/native": "11.11.0",
     "@emotion/react": "11.13.5",
     "@fast-styles/react": "0.2.9",
